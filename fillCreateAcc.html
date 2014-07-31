@@ -1,0 +1,35 @@
+<!-- author Jason Kirby
+     Tells user all fields need to be filled out -->
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AthFest Mobile Web App</title>
+<link href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+
+</head> 
+<body> 
+
+<div data-role="page" id="createAccount">
+  <div data-role="header">
+    <h1>Create Account</h1>
+  </div>
+  Please fill out all fields!
+  <div data-role="content">
+ 	<form action="Accounts.php" method="post">
+ 		Enter Username: <input type="text" name="newUsername">
+ 		Enter Password: <input type="password" name="newPassword">
+ 		Confirm Password: <input type="password" name="conPassword">
+ 		<button type="submit" id="createAcc">Create Account</button>
+ 	</form>
+	<a href="http://172.17.152.41:8080/Ath/AthFest.html" data-role="button">Cancel</a>
+  </div>
+  <div data-role="footer">
+    <h4>AthFest</h4>
+  </div>
+</div>
+
+</body>
+</html>

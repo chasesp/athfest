@@ -1,0 +1,12 @@
+<!-- author William Spivey & Logan Henry -->
+
+<project name="Ath" default="deploy">
+
+  <target name="deploy">
+    <war webxml="WEB-INF/web.xml" destfile="Ath.war" basedir=".">
+      <lib dir="WEB-INF/lib"/>
+    </war>
+    <copy file="Ath.war" todir="/var/lib/tomcat6/webapps"/>
+  </target>
+
+</project>

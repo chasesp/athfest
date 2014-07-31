@@ -1,0 +1,10 @@
+/*
+ * author Jason Kirby
+ * Adjusts photos to size of screen
+ */
+ 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
